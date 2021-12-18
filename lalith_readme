@@ -1,0 +1,23 @@
+Created this prj by learning from this reference https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348
+
+=== First of all, I Played with 2 demo code 
+- demo_cameraTest.py 
+- demo_faceDetection.py
+
+
+=== Started Project
+- face_dataset.py
+    It is used to Gather the Pictures (count 30) and store in folder "dataset"
+    It will prompt for the userId. Give some valid id for a user. EX: 4
+
+- face_trainer.py
+    It is used to train the OpenCV recognizer. It takes the pictures from Dataset folder, and trains and as a result, creates a "trainer.yml"
+
+- face_recognition.py
+    Live action now. So, this script will open up the camera, and recognizes the face, and shows correct name.
+    This script will find the user Id correctly. Ex: 4
+
+Folder "Cascades" 
+- haarcascade_frontalface_default.xml
+    This is a algorithm we use for face detection
+
