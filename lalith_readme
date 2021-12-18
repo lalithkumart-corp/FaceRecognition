@@ -1,6 +1,12 @@
 Created this prj by learning from this reference https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348
 
-=== First of all, I Played with 2 demo code 
+
+
+=== First of all, Downloaded the pre-requirements
+- Installed the "OpenCV" in machine (below command). https://docs.opencv.org/4.x/d2/de6/tutorial_py_setup_in_ubuntu.html
+    $ sudo apt-get install python3-opencv 
+
+=== I Played with 2 demo code 
 - demo_cameraTest.py 
 - demo_faceDetection.py
 
@@ -21,3 +27,6 @@ Folder "Cascades"
 - haarcascade_frontalface_default.xml
     This is a algorithm we use for face detection
 
+=== requirements.txt
+- Generated the requirements file by running below command
+   $ pip3 freeze > requirements.txt
