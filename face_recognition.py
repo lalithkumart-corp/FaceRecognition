@@ -1,15 +1,23 @@
 import cv2
 import numpy as np
 import os 
+
+# model = cv2.face.LBPHFaceRecognizer_create() #Local Binary Patterns Histograms
+# model = cv2.face.EigenFaceRecognizer_create()
+# model = cv2.face.FisherFaceRecognizer_create()
+
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read('trainer/trainer.yml')
+
+# Using Haarcascade for detecting "Face" from image
 cascadePath = "Cascades/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath)
+
 font = cv2.FONT_HERSHEY_SIMPLEX
 #iniciate id counter
 id = 0
 # names related to ids: example ==> Marcelo: id=1,  etc
-names = ['None', 'Marcelo', 'Paula', 'Ilza', 'Z', 'W', 'anandh', 'bala', 'cally', 'dharamchand', 
+names = ['None', 'Lalith', 'Paula', 'Ilza', 'Z', 'W', 'anandh', 'bala', 'cally', 'dharamchand', 
 'elizabeth','felix', 'ganpath', 'hari', 'joseph', 'karthick', 'rajesh', 'mani', 'naresh', 'om', 
 'prakash', 'queen', 'lalith', 'sampath', 'tiger', 'um', 'vignesh'] 
 # Initialize and start realtime video capture
